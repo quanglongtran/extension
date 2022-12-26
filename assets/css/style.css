@@ -1,0 +1,44 @@
+.btn-group {
+    background-color: #0f0;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 50px auto;
+}
+
+.success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #d1e7dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    font-size: 3rem;
+    /* display: none; */
+    opacity: 0;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    0% {
+        display: flex;
+        opacity: 1;
+        width: 130px;
+        height: 130px;
+    }
+    50%{
+        width: 150px;
+        height: 150px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        display: none;
+    }
+}
